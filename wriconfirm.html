@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html lang ="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Thank You!</title>
+        
+        <link rel="stylesheet" type="text/css" href="app.css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat|Muli" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+		<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+       
+
+
+  <style>
+  	.main {
+  		margin: 10%;
+  		padding: 5%;
+
+  		display: flex;
+  		flex-direction: column;
+  		align-items: center;
+
+  		font-family: Muli;
+
+  		background-color: #F7F7F7;
+  	}
+  	#transition {
+  		border-style: none;
+  		border-radius: 50px;
+  		font-size: 14px;
+  		padding-top: .5em;
+          padding-bottom: .5em;
+          padding-left: 3em;
+          padding-right: 3em;
+          color: white;
+          background-color: #5DD9D6;
+  	}
+  	a:hover {
+  		text-decoration: none;
+  	}
+  	
+  </style>
+</head>
+
+	<body>
+     <nav style="margin-bottom: -4em" class="navbar navbar-expand-lg navbar-fixed-top navbar-light bg-light">
+    <a class="navbar-brand" href="#" id="brand"><img src="logo.png"></a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+           <a class="nav-link" href="walkrightin.html">Home <span class="sr-only">(current)</span></a>
+       </li>
+       <li class="nav-item">
+           <a class="nav-link" href="#">About</a>
+       </li>
+       <li class="nav-item">
+           <a class="nav-link" href="#">Services</a>
+       </li>
+       <li class="nav-item">
+           <a class="nav-link" href="#">Contact Us</a>
+       </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <button onclick="location.href='wriForm.html'" id="bookAppt" class="btn btn-outline-success my-2 my-sm-0" type="button">Book An Appointment</button>
+      </form>
+    </div>
+  </nav>
+
+
+		<div style="padding-top: -10em" class="main">
+			<h3 style="text-align: center">Thank You!</h3>
+            <p><img src="ok.png" style="margin-top: 2em;margin-bottom: 1em"></p>
+			<p style="text-align: center; font-weight: light; color: grey">Your appointment has been set!<br>
+				A verification message has been sent to your phone. <br> </p>
+			<p style="text-align: center; color: grey ;margin-bottom: 2.5em"><strong>NOTE: Depending on the clinic, patients may be subject to a cancellations or missed appointments fee</strong></p>
+			<a href="walkrightin.html" id="transition">Back to Home</a>
+		</div>
+	</body>
+</html>

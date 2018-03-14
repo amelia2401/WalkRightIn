@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang ="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Personal Information</title>
+        <link rel="stylesheet" type="text/css" href="app.css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat|Muli" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+		<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+        <style>
+        	.main {
+        		margin: 10%;
+
+        		font-family: PT Sans;
+
+        		background-color: #F7F7F7;
+        	}
+        	#firstCol {
+        		margin: 5vw;
+        		margin-left: 20vw;
+        		margin-right: 6vw;
+        	}
+        	#secondCol {
+        		margin: 10vw;
+        		margin-bottom: 2.5vw;
+        		margin-left: -9vw;
+        	}
+        	input, select {
+        		border-style: none;
+        		height: 45px;
+        		padding: 10px;
+        		width: 200px;
+				background-color: #FFFFFF;
+				border-radius: 4px;
+				-webkit-appearance: none;
+        	}
+        	button {
+        		font-family: Muli;
+				border-style: none;
+				color: white;
+				background-color: #5DD9D6;
+				border-radius: 50px;
+				width: 70%;
+
+        	}
+        </style>
+    </head>
+
+	<body>
+
+		<!-- NAVBAR -->
+  <nav style="margin-bottom: -4em" class="navbar navbar-expand-lg navbar-fixed-top navbar-light bg-light">
+    <a class="navbar-brand" href="#" id="brand"><img src="logo.png"></a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+           <a class="nav-link" href="walkrightin.html">Home <span class="sr-only">(current)</span></a>
+       </li>
+       <li class="nav-item">
+           <a class="nav-link" href="#">About</a>
+       </li>
+       <li class="nav-item">
+           <a class="nav-link" href="#">Services</a>
+       </li>
+       <li class="nav-item">
+           <a class="nav-link" href="#">Contact Us</a>
+       </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <button onclick="location.href='wriForm.html'" id="bookAppt" class="btn btn-outline-success my-2 my-sm-0" type="button">Book An Appointment</button>
+      </form>
+    </div>
+  </nav>
+
+		<div class="main">
+			<form action="wrisymptoms.html" method="post" target="_blank" style="display:flex; flex-direction: row; align-items: flex-start;">
+				<div id="firstCol" style="display:flex; flex-direction: column;">
+					<h3 style="margin-left: 6em">Personal Information</h3>
+					First Name <br>
+					<input type="text" name="firstName" placeholder="Kelly"> <br>
+					Last Name <br>
+					<input type="text" name="lastName" placeholder="Jones"> <br>
+					Address <br>
+					<input type="text" name="firstLine" placeholder="16 Anne Street"> <br>
+					<input type="text" name="city" placeholder="MappleVille"> <br>
+					<div style="display:flex; flex-direction: row">
+						<input type="text" name="postalCode" placeholder="N4X 1C4" style="width:9vw">
+						<select name="province" style="width:9vw; margin-left: 1vw">
+							<option value="ontario">Ontario</option>
+							<option value="britishColombia">British Columbia</option>
+							<option value="saskatchewan">Saskatchewan</option>
+							<option value="princeEdwardIsland">Prince Edward Island</option>
+							<option value="novaScotia">Nova Scotia</option>
+							<option value="manitoba">Manitoba</option>
+							<option value="newBrunswick">New Brunswick</option>
+							<option value="newfoundlandLabrador">Newfoundland and Labrador</option>
+							<option value="quebec">Quebec</option>
+							<option value="alberta">Alberta</option>
+						</select>
+					</div>
+				</div>
+				<div style="display:flex; flex-direction: column; align-items: center;">
+					<div id="secondCol" style="display:flex; flex-direction: column;">
+						Date of Birth <br>
+						<input type="text" name="firstName" placeholder="08/24/1979 "> <img style="width: 25px; height: 25px; margin-left: 9em;margin-top: -2.1em" src="https://s3-alpha.figma.com/img/1612/c63b/bca1dd7e226c17711d55295b10374ee3?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJK6APQGEHTP6I3PA%2F20180304%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20180304T165541Z&X-Amz-Expires=60&X-Amz-SignedHeaders=host&X-Amz-Signature=3e0c909ada1075e5195489584d78715e70a0b7afb6f20b14d09e9745e9cb4c7c"><br>
+						Health Card No. <br>
+						<input type="text" name="firstName" placeholder="XXXXXXXXXXXXX"> <br>
+						Primary Contact No. <br>
+						<input type="text" name="firstName" placeholder="519-683-8287"> <br>
+					</div>
+					<button type="submit" style="margin:auto; margin-left:-6.5em">Submit</button>
+				</div>
+			</form>
+		</div>
+		
+	</body>
+</html>

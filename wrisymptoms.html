@@ -1,0 +1,120 @@
+
+<!DOCTYPE html>
+<html lang ="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Symptoms</title>
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+		<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="wristyle.css">
+    </head>
+
+	<body>
+
+		<!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-fixed-top navbar-light bg-light">
+    <a class="navbar-brand" href="#" id="brand"><img src="logo.png"></a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+           <a class="nav-link" href="walkrightin.html">Home <span class="sr-only">(current)</span></a>
+       </li>
+       <li class="nav-item">
+           <a class="nav-link" href="#">About</a>
+       </li>
+       <li class="nav-item">
+           <a class="nav-link" href="#">Services</a>
+       </li>
+       <li class="nav-item">
+           <a class="nav-link" href="#">Contact Us</a>
+       </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <button onclick="location.href='wriForm.html'" id="bookAppt" class="btn btn-outline-success my-2 my-sm-0" type="button">Book An Appointment</button>
+      </form>
+    </div>
+  </nav>
+
+  
+		<div class="main" style="display:flex; flex-direction:row; justify-content: space-between; margin: 10%">
+			<div>
+				<p style="text-align:center; font-weight:bold; margin: auto">Book Your Appointment</p>
+				<p style="text-align:center">Where do you experience symptoms?</p>
+				<div id="myGuy" style="margin-left:-15%; width:30vw">
+					<div class="dropdown">
+						<button id="head" class="dropButton">Head</button>
+						<div class="dropdown-content">
+						    <a href="#">Ache</a>
+						    <a href="#">Blurry vision</a>
+						</div>
+					</div>
+					<div class="dropdown">
+						<button id="chest" class="dropButton">Chest</button>
+						<div class="dropdown-content">
+						    <a href="#">Sharp pains</a>
+						    <a href="#">Ache</a>
+						    <a href="#">Heartburn</a>
+						</div>
+					</div>
+					<div class="dropdown">
+						<button id="leftArm" class="dropButton">Arm</button>
+						<div class="dropdown-content">
+						    <a href="#">Soreness</a>
+						    <a href="#">Sharp pain</a>
+						</div>
+					</div>
+					<div id="rightArm">
+					</div>
+					<div class="dropdown">
+						<button id="leftLeg" class="dropButton">Leg</button>
+						<div class="dropdown-content">
+						    <a href="#">Sharp pain</a>
+						    <a href="#">Numbness</a>
+						</div>
+					</div>
+					<div id="rightLeg">
+					</div>
+					<div id="rightFoot">
+					</div>
+					<div class="dropdown">
+						<button id="leftFoot" class="dropButton">Foot</button>
+						<div class="dropdown-content">
+						    <a href="#">Discoloration</a>
+						    <a href="#">Swelling</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div>
+			<form style="display:flex; flex-direction:column; align-items: center; width: 40vw;">
+				<div style="padding: 10%">
+					Please describe your symptoms. <br>
+					<input id="xLtextBox" type="textarea" rows="3" name="symptoms" placeholder="Trouble breathing, burning sensation, coughing, etc."> <br> <br>
+					Roughly when did you start feeling these symptoms? <br>
+					<input type="text" name="date" placeholder="March 2, 2018"><br> <br>
+					How soon do you want to be seen?<br>
+					<select name="urgency" style="color:grey">
+						<option value="a">As soon as possible</option>
+						<option value="b">1-2 weeks</option>
+						<option value="c">3-4 weeks</option>
+						<option value="d">4-8 weeks</option>
+					</select>
+				</div>
+				<a href="doctor.html" id="transition">Continue</a>
+			</form>
+		</div>
+		</div>
+		
+	</body>
+</html>
